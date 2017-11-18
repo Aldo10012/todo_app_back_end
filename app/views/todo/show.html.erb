@@ -1,15 +1,13 @@
-<html>
-    <head>
-        <title> Todo List Application </title>
-    </head>
-    
-    <body>
-        <input type="checkbox">
-        <h2> make the curricululm 4 pomodoros</h2>
-        
-        <p>In this session, you will introdce the program with teh students and play an ice breaker.</p><br>
-        
-        <a href="#">Edit</a>
-        <a href="#">Delete</a>
-        <a href="index.html">Go Back</a>
-    </body>
+<h1>
+ <img class="company-logo" src="https://public.3.basecamp.com/p/iahgNshn1oKq98sWGf1q89Vo/uploads/511042491/download/CodeNow%20Logo.png"></img> <br>
+ Workshop Todo List
+</h1>
+<%= params[:id]%>
+<div class="card">
+ <input type="checkbox" name=""/>
+ <h2> <%= @todo_description%> </h2>
+ <span class="pomodoro-estimate large-pomodoro-estimate"><%= @todo_pomodoro_estimate %> Pomodoros</span>
+ <a href="#" class="button" id="edit-todo-button">Edit</a>
+ <a href="#" class="button" id="delete-todo-button">Delete</a>
+ <a href="/todo/index" class="simple-link">Go back...</a>
+</div>
