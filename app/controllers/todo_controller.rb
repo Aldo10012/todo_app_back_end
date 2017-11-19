@@ -7,7 +7,25 @@ class TodoController < ApplicationController
             @todo_description="make the curriculum"
             @todo_pomodoro = 4
         elsif todo_id == '2'
-            @todo_description ="Do HW"
+            @todo_description ="Buy workshop supplies "
+            @todo_pomodoro_estimate = 3
+        elsif todo_id == '3'
+            @todo_description =" Meet with the volunteer trainers "
+            @todo_pomodoro_estimate = 2
+        elsif todo_id == '4'
+            @todo_description ="Order food for Saturday and Sunday "
+            @todo_pomodoro_estimate = 1
+        elsif todo_id == '5'
+            @todo_description =" Check pre-work assignments"
+            @todo_pomodoro_estimate = 2
+        elsif todo_id == '6'
+            @todo_description =" Send workshop location to all the students"
+            @todo_pomodoro_estimate = 1
+        elsif todo_id == '7'
+            @todo_description =" Have a great workshop "
+            @todo_pomodoro_estimate = 0
+        elsif todo_id == '8'
+            @todo_description ="*description* 4 pomodoros"
             @todo_pomodoro_estimate = 6
         end
     end
